@@ -59,7 +59,7 @@ async def _fetch_and_send_music(message: Message):
     await message.reply_chat_action("typing")
     try:
         ydl_opts = {
-            'format': 320kb
+            'format': 'highaudio',
             'outtmpl': '%(title)s - %(extractor)s-%(id)s.%(ext)s',
             'writethumbnail': True
         }
